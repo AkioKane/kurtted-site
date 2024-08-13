@@ -1,12 +1,54 @@
+@font-face {
+  font-family: "Arsenal";
+  src: url("./fonts/Arsenal_SC/ArsenalSC-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Baskerville";
+  src: url("./fonts/Baskervville_SC/BaskervvilleSC-Regular.ttf");
+}
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+h1 {
+  font-family: "Roboto", sans-serif;
+}
+
+hr {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+img {
+  height: 200px;
+  border-radius: 100%;
+  border: 2px solid rgb(73, 68, 36);
+}
+
 .main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   min-height: 100vh;
   background-color: rgb(20, 15, 31);
+  color: white;
+  font-family: "Arsenal";
+}
+
+.container {
+  display: flex;
+  gap: 10vw;
+  align-items: center;
+}
+
+.description {
+  max-width: 30vw;
 }
 
 #particles {
