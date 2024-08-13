@@ -25,9 +25,10 @@ hr {
 }
 
 img {
-  height: 200px;
+  height: 325px;
   border-radius: 100%;
   border: 2px solid rgb(73, 68, 36);
+  z-index: 2;
 }
 
 .main {
@@ -43,8 +44,9 @@ img {
 
 .container {
   display: flex;
-  gap: 10vw;
+  gap: 25vw;
   align-items: center;
+  z-index: 2;
 }
 
 .description {
@@ -57,4 +59,24 @@ img {
   height: 99%;
   top: 0;
   left: 0;
+  z-index: 1;
+}
+
+.reverse-page {
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+  padding: 9px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: #4b5563;
+  transition: all 0.3s ease-in-out;
+  z-index: 3;
+}
+
+.reverse-page:active {
+  background-color: #ffffff;
+  color: black;
+  opacity: 0.8;
 }
